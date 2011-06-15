@@ -66,6 +66,11 @@ int main(int argc, char * argv[])
                          "submit@bugs.kde.org");
  
     KCmdLineArgs::init( argc, argv, &aboutData );
+    KCmdLineOptions options;
+    options.add("!+command");
+
+    KCmdLineArgs::addCmdLineOptions( options );
+
     KApplication app;
 
     KCmdLineArgs * parsedArgs = KCmdLineArgs::parsedArgs();

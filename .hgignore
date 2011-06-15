@@ -4,3 +4,4 @@ set-kde-virtual-desktops-names/CMakeTmp
 set-kde-virtual-desktops-names/Makefile
 set-kde-virtual-desktops-names/cmake_install.cmake
 set-kde-virtual-desktops-names/cmake_uninstall.cmake
+set-kde-virtual-desktops-names/build

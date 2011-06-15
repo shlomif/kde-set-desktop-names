@@ -68,8 +68,6 @@ int main(int argc, char * argv[])
     KCmdLineArgs::init( argc, argv, &aboutData );
     KApplication app;
 
-    int numDesktops = 8;
-
     QStringList desktopNames;
 
     desktopNames << "Main";
@@ -80,6 +78,9 @@ int main(int argc, char * argv[])
     desktopNames << "Config";
     desktopNames << "Desktop 7";
     desktopNames << "Games";
+
+    int numDesktops = desktopNames.count();
+
 #ifdef Q_WS_X11
     NETRootInfo info( QX11Info::display(), NET::NumberOfDesktops | NET::DesktopNames );
     // set desktop names

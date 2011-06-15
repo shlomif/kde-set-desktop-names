@@ -68,16 +68,14 @@ int main(int argc, char * argv[])
     KCmdLineArgs::init( argc, argv, &aboutData );
     KApplication app;
 
+    KCmdLineArgs * parsedArgs = KCmdLineArgs::parsedArgs();
+
     QStringList desktopNames;
 
-    desktopNames << "Main";
-    desktopNames << "Devel";
-    desktopNames << "Chat";
-    desktopNames << "Donkey";
-    desktopNames << "Music";
-    desktopNames << "Config";
-    desktopNames << "Desktop 7";
-    desktopNames << "Games";
+    for (int i = 0; i < parsedArgs->count() ; i++)
+    {
+        desktopNames << parsedArgs->arg(i);
+    }
 
     int numDesktops = desktopNames.count();
 

@@ -2,7 +2,7 @@
  * A program to set the names of KDE 4' virtual desktops (a.k.a virtual
  * workspaces).
  *
- * Adapted from kdebase-workspace-4.6.4 's 
+ * Adapted from kdebase-workspace-4.6.4 's
  * kwin/kcmkwin/kwindesktop/main.cpp , which is:
 ********************************************************************
 KWin - the KDE window manager
@@ -64,7 +64,7 @@ int main(int argc, char * argv[])
                          "http://example.com/",
                          // The bug report email address
                          "submit@bugs.kde.org");
- 
+
     KCmdLineArgs::init( argc, argv, &aboutData );
     KCmdLineOptions options;
     options.add("!+command");
